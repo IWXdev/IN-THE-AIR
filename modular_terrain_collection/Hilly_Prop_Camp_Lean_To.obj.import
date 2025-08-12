@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b3qnpubq5yvoa"
+path="res://.godot/imported/Hilly_Prop_Camp_Lean_To.obj-b15bcfe65720f138a1aeff41150ac01c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Camp_Lean_To.obj-b15bcfe65720f138a1aeff41150ac01c.mesh"]
+
+source_file="res://modular_terrain_collection/Hilly_Prop_Camp_Lean_To.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Camp_Lean_To.obj-b15bcfe65720f138a1aeff41150ac01c.mesh", "res://.godot/imported/Hilly_Prop_Camp_Lean_To.obj-b15bcfe65720f138a1aeff41150ac01c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

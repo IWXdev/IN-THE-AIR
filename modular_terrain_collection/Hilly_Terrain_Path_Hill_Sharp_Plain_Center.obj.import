@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xfj4kaobega8"
+path="res://.godot/imported/Hilly_Terrain_Path_Hill_Sharp_Plain_Center.obj-44648c555acbb30b9a069c1b8a50422c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Terrain_Path_Hill_Sharp_Plain_Center.obj-44648c555acbb30b9a069c1b8a50422c.mesh"]
+
+source_file="res://modular_terrain_collection/Hilly_Terrain_Path_Hill_Sharp_Plain_Center.obj"
+dest_files=["res://.godot/imported/Hilly_Terrain_Path_Hill_Sharp_Plain_Center.obj-44648c555acbb30b9a069c1b8a50422c.mesh", "res://.godot/imported/Hilly_Terrain_Path_Hill_Sharp_Plain_Center.obj-44648c555acbb30b9a069c1b8a50422c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

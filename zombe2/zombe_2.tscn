@@ -1,0 +1,1004 @@
+[gd_scene load_steps=52 format=4 uid="uid://df7rhgo362ee5"]
+
+[ext_resource type="Script" path="res://zombe2/zombe_2.gd" id="1_7mpij"]
+[ext_resource type="Texture2D" uid="uid://byjowjyriikco" path="res://zombe2/BlockyZombie_0.png" id="2_dt4ew"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gfhvc"]
+resource_name = "BlockyZombieTexture.png"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("2_dt4ew")
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_r6673"]
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -62.5313, 75, 50, 62.5625),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAAA9AAAWQgAAyMEAAAA9AAAWQgAAyMEAIHrCAAAWQgAAlsIAIHrCAAAWwgAAyMEAIHrCAAAWwgAAyMEAAAA9AAAWwgAAlsIAAAA9AAAWwgAAlsIAIHrC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_as1sn"]
+resource_name = "LeftKnee_1"
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -62.5313, 75, 50, 62.5625),
+"attribute_data": PackedByteArray("AADePgAAyD4AAN4+AAC4PgAA8j4AALg+AADyPgAAyD4AALA9AADiPgAAAD4AAOI+AAAAPgAA8j4AALA9AADyPgAAnj4AALA+AACePgAAxD4AAIY+AADEPgAAhj4AALA+AACgPgAAsD4AALg+AACwPgAAuD4AAMQ+AACgPgAAxD4AAMw+AAAsPgAA5D4AACw+AADkPgAATD4AAMw+AABMPgAAzD4AAHA+AADMPgAAUD4AAOQ+AABQPgAA5D4AAHA+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAAA9AAAWQgAAyMEAAAA9AAAWQgAAyMEAIHrCAAAWQgAAlsIAIHrCAAAWwgAAyMEAIHrCAAAWwgAAyMEAAAA9AAAWwgAAlsIAAAA9AAAWwgAAlsIAIHrCAAAWQgAAyMEAIHrCAAAWQgAAyMEAAAA9AAAWwgAAyMEAAAA9AAAWwgAAyMEAIHrCAAAWwgAAlsIAAAA9AAAWQgAAlsIAAAA9AAAWQgAAlsIAIHrCAAAWwgAAlsIAIHrCAAAWwgAAyMEAAAA9AAAWQgAAyMEAAAA9AAAWQgAAlsIAAAA9AAAWwgAAlsIAAAA9AAAWQgAAlsIAIHrCAAAWQgAAyMEAIHrCAAAWwgAAyMEAIHrCAAAWwgAAlsIAIHrC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_r6673")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3oqni"]
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -31.25, 62.5, 87.5, 62.5),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAPpBAAD6QQAASEEAAPpBAAD6QQAASEEAAPrBAAD6QQAAlsIAAPrBAAD6wQAASEEAAPrBAAD6wQAASEEAAPpBAAD6wQAAlsIAAPpBAAD6wQAAlsIAAPrB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ry0up"]
+resource_name = "LowerRLeg_1"
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -31.25, 62.5, 87.5, 62.5),
+"attribute_data": PackedByteArray("AAC4PQAAqD4AALg9AACMPgAABD4AAIw+AAAEPgAAqD4AAAg+AACMPgAAMD4AAIw+AAAwPgAAqD4AAAg+AACoPgAArj4AAMY+AACuPgAA2j4AAJo+AADaPgAAmj4AAMY+AADIPgAAAAAAANw+AAAAAAAA3D4AACA9AADIPgAAID0AAAAAAACOPgAAID0AAI4+AAAgPQAAqj4AAAAAAACqPgAAMD0AAKo+AAAwPQAAjj4AAKg9AACOPgAAqD0AAKo+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAPpBAAD6QQAASEEAAPpBAAD6QQAASEEAAPrBAAD6QQAAlsIAAPrBAAD6wQAASEEAAPrBAAD6wQAASEEAAPpBAAD6wQAAlsIAAPpBAAD6wQAAlsIAAPrBAAD6QQAASEEAAPrBAAD6QQAASEEAAPpBAAD6wQAASEEAAPpBAAD6wQAASEEAAPrBAAD6wQAAlsIAAPpBAAD6QQAAlsIAAPpBAAD6QQAAlsIAAPrBAAD6wQAAlsIAAPrBAAD6wQAASEEAAPpBAAD6QQAASEEAAPpBAAD6QQAAlsIAAPpBAAD6wQAAlsIAAPpBAAD6QQAAlsIAAPrBAAD6QQAASEEAAPrBAAD6wQAASEEAAPrBAAD6wQAAlsIAAPrB////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3oqni")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h6vu1"]
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -62.5, 62.5, 75, 62.5),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAAAAAAD6QQAAlkEAAAAAAAD6QQAAlkEAAHrCAAD6QQAAYcIAAHrCAAD6wQAAlkEAAHrCAAD6wQAAlkEAAAAAAAD6wQAAYcIAAAAAAAD6wQAAYcIAAHrC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2eooy"]
+resource_name = "LeftThigh"
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -62.5, 62.5, 75, 62.5),
+"attribute_data": PackedByteArray("AACcPgAArj4AAJw+AACWPgAAsD4AAJY+AACwPgAArj4AALA9AACqPgAAAD4AAKo+AAAAPgAAwj4AALA9AADCPgAAmD0AAMY+AACYPQAA2j4AABA9AADaPgAAED0AAMY+AACEPgAAxj4AAJg+AADGPgAAmD4AANo+AACEPgAA2j4AAAQ+AACqPgAALD4AAKo+AAAsPgAAwj4AAAQ+AADCPgAAAAAAAMQ+AAAAAAAArD4AACA9AACsPgAAID0AAMQ+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAAAAAAD6QQAAlkEAAAAAAAD6QQAAlkEAAHrCAAD6QQAAYcIAAHrCAAD6wQAAlkEAAHrCAAD6wQAAlkEAAAAAAAD6wQAAYcIAAAAAAAD6wQAAYcIAAHrCAAD6QQAAlkEAAHrCAAD6QQAAlkEAAAAAAAD6wQAAlkEAAAAAAAD6wQAAlkEAAHrCAAD6wQAAYcIAAAAAAAD6QQAAYcIAAAAAAAD6QQAAYcIAAHrCAAD6wQAAYcIAAHrCAAD6wQAAlkEAAAAAAAD6QQAAlkEAAAAAAAD6QQAAYcIAAAAAAAD6wQAAYcIAAAAAAAD6QQAAYcIAAHrCAAD6QQAAlkEAAHrCAAD6wQAAlkEAAHrCAAD6wQAAYcIAAHrC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_h6vu1")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_55g2t"]
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -62.5313, 75, 50, 62.5625),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAAA9AAAWQgAAyMEAAAA9AAAWQgAAyMEAIHrCAAAWQgAAlsIAIHrCAAAWwgAAyMEAIHrCAAAWwgAAyMEAAAA9AAAWwgAAlsIAAAA9AAAWwgAAlsIAIHrC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mthig"]
+resource_name = "RightKnee_1"
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -62.5313, 75, 50, 62.5625),
+"attribute_data": PackedByteArray("AADiPgAAHD4AAOI+AAD4PQAA9j4AAPg9AAD2PgAAHD4AAEQ+AADkPgAAbD4AAOQ+AABsPgAA9D4AAEQ+AAD0PgAAyj4AABw+AADKPgAARD4AALI+AABEPgAAsj4AABw+AACyPgAASD4AAMo+AABIPgAAyj4AAHA+AACyPgAAcD4AAMw+AACmPgAA5D4AAKY+AADkPgAAtj4AAMw+AAC2PgAAsD4AANw+AACwPgAAzD4AAMg+AADMPgAAyD4AANw+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAAA9AAAWQgAAyMEAAAA9AAAWQgAAyMEAIHrCAAAWQgAAlsIAIHrCAAAWwgAAyMEAIHrCAAAWwgAAyMEAAAA9AAAWwgAAlsIAAAA9AAAWwgAAlsIAIHrCAAAWQgAAyMEAIHrCAAAWQgAAyMEAAAA9AAAWwgAAyMEAAAA9AAAWwgAAyMEAIHrCAAAWwgAAlsIAAAA9AAAWQgAAlsIAAAA9AAAWQgAAlsIAIHrCAAAWwgAAlsIAIHrCAAAWwgAAyMEAAAA9AAAWQgAAyMEAAAA9AAAWQgAAlsIAAAA9AAAWwgAAlsIAAAA9AAAWQgAAlsIAIHrCAAAWQgAAyMEAIHrCAAAWwgAAyMEAIHrCAAAWwgAAlsIAIHrC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_55g2t")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3ht7r"]
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -31.25, 62.5, 87.5, 62.5),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAPpBAAD6QQAASEEAAPpBAAD6QQAASEEAAPrBAAD6QQAAlsIAAPrBAAD6wQAASEEAAPrBAAD6wQAASEEAAPpBAAD6wQAAlsIAAPpBAAD6wQAAlsIAAPrB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4yc2g"]
+resource_name = "LowerLLeg_1"
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -31.25, 62.5, 87.5, 62.5),
+"attribute_data": PackedByteArray("AACGPgAArj4AAIY+AACSPgAAmj4AAJI+AACaPgAArj4AADQ+AACaPgAAXD4AAJo+AABcPgAAtj4AADQ+AAC2PgAA3D4AAHQ+AADcPgAAjj4AAMg+AACOPgAAyD4AAHQ+AADIPgAAkD4AANw+AACQPgAA3D4AAKQ+AADIPgAApD4AAGA+AACaPgAAhD4AAJo+AACEPgAAtj4AAGA+AAC2PgAAnD4AAGA9AACcPgAAAAAAALA+AAAAAAAAsD4AAGA9"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAPpBAAD6QQAASEEAAPpBAAD6QQAASEEAAPrBAAD6QQAAlsIAAPrBAAD6wQAASEEAAPrBAAD6wQAASEEAAPpBAAD6wQAAlsIAAPpBAAD6wQAAlsIAAPrBAAD6QQAASEEAAPrBAAD6QQAASEEAAPpBAAD6wQAASEEAAPpBAAD6wQAASEEAAPrBAAD6wQAAlsIAAPpBAAD6QQAAlsIAAPpBAAD6QQAAlsIAAPrBAAD6wQAAlsIAAPrBAAD6wQAASEEAAPpBAAD6QQAASEEAAPpBAAD6QQAAlsIAAPpBAAD6wQAAlsIAAPpBAAD6QQAAlsIAAPrBAAD6QQAASEEAAPrBAAD6wQAASEEAAPrBAAD6wQAAlsIAAPrB////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3ht7r")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_smya4"]
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -62.5, 62.5, 75, 62.5),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAAAAAAD6QQAAlkEAAAAAAAD6QQAAlkEAAHrCAAD6QQAAYcIAAHrCAAD6wQAAlkEAAHrCAAD6wQAAlkEAAAAAAAD6wQAAYcIAAAAAAAD6wQAAYcIAAHrC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xw62s"]
+resource_name = "RightThigh"
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -62.5, 62.5, 75, 62.5),
+"attribute_data": PackedByteArray("AAAwPQAAxD4AADA9AACsPgAAqD0AAKw+AACoPQAAxD4AALI+AAAAAAAAxj4AAAAAAADGPgAAQD0AALI+AABAPQAA3D4AADA9AADcPgAAqD0AAMg+AACoPQAAyD4AADA9AADIPgAAsD0AANw+AACwPQAA3D4AAAA+AADIPgAAAD4AALI+AABQPQAAxj4AAFA9AADGPgAAyD0AALI+AADIPQAAsj4AABg+AACyPgAA0D0AAMY+AADQPQAAxj4AABg+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAAAAAAD6QQAAlkEAAAAAAAD6QQAAlkEAAHrCAAD6QQAAYcIAAHrCAAD6wQAAlkEAAHrCAAD6wQAAlkEAAAAAAAD6wQAAYcIAAAAAAAD6wQAAYcIAAHrCAAD6QQAAlkEAAHrCAAD6QQAAlkEAAAAAAAD6wQAAlkEAAAAAAAD6wQAAlkEAAHrCAAD6wQAAYcIAAAAAAAD6QQAAYcIAAAAAAAD6QQAAYcIAAHrCAAD6wQAAYcIAAHrCAAD6wQAAlkEAAAAAAAD6QQAAlkEAAAAAAAD6QQAAYcIAAAAAAAD6wQAAYcIAAAAAAAD6QQAAYcIAAHrCAAD6QQAAlkEAAHrCAAD6wQAAlkEAAHrCAAD6wQAAYcIAAHrC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_smya4")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gotpu"]
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -56.2813, 75, 50, 50.0625),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAMfAAAAWQgAAyMEAAMfAAAAWQgAAyMEAIGHCAAAWQgAAlsIAIGHCAAAWwgAAyMEAIGHCAAAWwgAAyMEAAMfAAAAWwgAAlsIAAMfAAAAWwgAAlsIAIGHC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sungr"]
+resource_name = "LElbow_1"
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -56.2813, 75, 50, 50.0625),
+"attribute_data": PackedByteArray("AABwPgAA/j4AAHA+AADuPgAAiD4AAO4+AACIPgAA/j4AAOo+AADuPgAA+j4AAO4+AAD6PgAA/j4AAOo+AAD+PgAA9j4AAFA9AAD2PgAAqD0AAN4+AACoPQAA3j4AAFA9AADePgAAsD0AAPY+AACwPQAA9j4AAPA9AADePgAA8D0AAN4+AAB0PgAA9j4AAHQ+AAD2PgAAij4AAN4+AACKPgAA3j4AAJw+AADePgAAjD4AAPY+AACMPgAA9j4AAJw+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAMfAAAAWQgAAyMEAAMfAAAAWQgAAyMEAIGHCAAAWQgAAlsIAIGHCAAAWwgAAyMEAIGHCAAAWwgAAyMEAAMfAAAAWwgAAlsIAAMfAAAAWwgAAlsIAIGHCAAAWQgAAyMEAIGHCAAAWQgAAyMEAAMfAAAAWwgAAyMEAAMfAAAAWwgAAyMEAIGHCAAAWwgAAlsIAAMfAAAAWQgAAlsIAAMfAAAAWQgAAlsIAIGHCAAAWwgAAlsIAIGHCAAAWwgAAyMEAAMfAAAAWQgAAyMEAAMfAAAAWQgAAlsIAAMfAAAAWwgAAlsIAAMfAAAAWQgAAlsIAIGHCAAAWQgAAyMEAIGHCAAAWwgAAyMEAIGHCAAAWwgAAlsIAIGHC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_gotpu")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ljsty"]
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -25, 62.5, 87.5, 50),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAMhBAAD6QQAASEEAAMhBAAD6QQAASEEAAMjBAAD6QQAAlsIAAMjBAAD6wQAASEEAAMjBAAD6wQAASEEAAMhBAAD6wQAAlsIAAMhBAAD6wQAAlsIAAMjB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_f12wf"]
+resource_name = "LowerLArm_1"
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -25, 62.5, 87.5, 50),
+"attribute_data": PackedByteArray("AAD4PQAA4D4AAPg9AADEPgAAHD4AAMQ+AAAcPgAA4D4AAAAAAADGPgAAAD0AAMY+AAAAPQAA4j4AAAAAAADiPgAA/j4AANw+AAD+PgAA7D4AAOo+AADsPgAA6j4AANw+AAAEPgAA7D4AACw+AADsPgAALD4AAPw+AAAEPgAA/D4AAJw+AAA0PgAAsD4AADQ+AACwPgAAbD4AAJw+AABsPgAAnD4AAJQ+AACcPgAAcD4AALA+AABwPgAAsD4AAJQ+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAMhBAAD6QQAASEEAAMhBAAD6QQAASEEAAMjBAAD6QQAAlsIAAMjBAAD6wQAASEEAAMjBAAD6wQAASEEAAMhBAAD6wQAAlsIAAMhBAAD6wQAAlsIAAMjBAAD6QQAASEEAAMjBAAD6QQAASEEAAMhBAAD6wQAASEEAAMhBAAD6wQAASEEAAMjBAAD6wQAAlsIAAMhBAAD6QQAAlsIAAMhBAAD6QQAAlsIAAMjBAAD6wQAAlsIAAMjBAAD6wQAASEEAAMhBAAD6QQAASEEAAMhBAAD6QQAAlsIAAMhBAAD6wQAAlsIAAMhBAAD6QQAAlsIAAMjBAAD6QQAASEEAAMjBAAD6wQAASEEAAMjBAAD6wQAAlsIAAMjB////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ljsty")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dqonm"]
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -56.25, 62.5, 75, 50),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAMjAAAD6QQAAlkEAAMjAAAD6QQAAlkEAAGHCAAD6QQAAYcIAAGHCAAD6wQAAlkEAAGHCAAD6wQAAlkEAAMjAAAD6wQAAYcIAAMjAAAD6wQAAYcIAAGHC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4ihk6"]
+resource_name = "UpperLArm"
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -56.25, 62.5, 75, 50),
+"attribute_data": PackedByteArray("AACWPgAA9D4AAJY+AADcPgAApj4AANw+AACmPgAA9D4AAN4+AAAAAAAA7j4AAAAAAADuPgAAQD0AAN4+AABAPQAA+j4AAEQ+AAD6PgAAZD4AAOY+AABkPgAA5j4AAEQ+AADmPgAAnj4AAPo+AACePgAA+j4AAK4+AADmPgAArj4AADA+AAC4PgAAWD4AALg+AABYPgAA0D4AADA+AADQPgAAXD4AANA+AABcPgAAuD4AAII+AAC4PgAAgj4AANA+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAMjAAAD6QQAAlkEAAMjAAAD6QQAAlkEAAGHCAAD6QQAAYcIAAGHCAAD6wQAAlkEAAGHCAAD6wQAAlkEAAMjAAAD6wQAAYcIAAMjAAAD6wQAAYcIAAGHCAAD6QQAAlkEAAGHCAAD6QQAAlkEAAMjAAAD6wQAAlkEAAMjAAAD6wQAAlkEAAGHCAAD6wQAAYcIAAMjAAAD6QQAAYcIAAMjAAAD6QQAAYcIAAGHCAAD6wQAAYcIAAGHCAAD6wQAAlkEAAMjAAAD6QQAAlkEAAMjAAAD6QQAAYcIAAMjAAAD6wQAAYcIAAMjAAAD6QQAAYcIAAGHCAAD6QQAAlkEAAGHCAAD6wQAAlkEAAGHCAAD6wQAAYcIAAGHC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dqonm")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hp6gw"]
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -56.2813, 75, 50, 50.0625),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAMfAAAAWQgAAyMEAAMfAAAAWQgAAyMEAIGHCAAAWQgAAlsIAIGHCAAAWwgAAyMEAIGHCAAAWwgAAyMEAAMfAAAAWwgAAlsIAAMfAAAAWwgAAlsIAIGHC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6ubtm"]
+resource_name = "RElbow_1"
+_surfaces = [{
+"aabb": AABB(-37.5, -75, -56.2813, 75, 50, 50.0625),
+"attribute_data": PackedByteArray("AABwPgAA/j4AAHA+AADuPgAAiD4AAO4+AACIPgAA/j4AAOo+AADuPgAA+j4AAO4+AAD6PgAA/j4AAOo+AAD+PgAA9j4AAFA9AAD2PgAAqD0AAN4+AACoPQAA3j4AAFA9AADePgAAsD0AAPY+AACwPQAA9j4AAPA9AADePgAA8D0AAN4+AAB0PgAA9j4AAHQ+AAD2PgAAij4AAN4+AACKPgAA3j4AAJw+AADePgAAjD4AAPY+AACMPgAA9j4AAJw+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAWQgAAlsIAAMfAAAAWQgAAyMEAAMfAAAAWQgAAyMEAIGHCAAAWQgAAlsIAIGHCAAAWwgAAyMEAIGHCAAAWwgAAyMEAAMfAAAAWwgAAlsIAAMfAAAAWwgAAlsIAIGHCAAAWQgAAyMEAIGHCAAAWQgAAyMEAAMfAAAAWwgAAyMEAAMfAAAAWwgAAyMEAIGHCAAAWwgAAlsIAAMfAAAAWQgAAlsIAAMfAAAAWQgAAlsIAIGHCAAAWwgAAlsIAIGHCAAAWwgAAyMEAAMfAAAAWQgAAyMEAAMfAAAAWQgAAlsIAAMfAAAAWwgAAlsIAAMfAAAAWQgAAlsIAIGHCAAAWQgAAyMEAIGHCAAAWwgAAyMEAIGHCAAAWwgAAlsIAIGHC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_hp6gw")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lleky"]
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -25, 62.5, 87.5, 50),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAMhBAAD6QQAASEEAAMhBAAD6QQAASEEAAMjBAAD6QQAAlsIAAMjBAAD6wQAASEEAAMjBAAD6wQAASEEAAMhBAAD6wQAAlsIAAMhBAAD6wQAAlsIAAMjB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ywuxb"]
+resource_name = "LowerRLeg_2"
+_surfaces = [{
+"aabb": AABB(-31.25, -75, -25, 62.5, 87.5, 50),
+"attribute_data": PackedByteArray("AAD4PQAA4D4AAPg9AADEPgAAHD4AAMQ+AAAcPgAA4D4AAAAAAADGPgAAAD0AAMY+AAAAPQAA4j4AAAAAAADiPgAA/j4AANw+AAD+PgAA7D4AAOo+AADsPgAA6j4AANw+AAAEPgAA7D4AACw+AADsPgAALD4AAPw+AAAEPgAA/D4AAJw+AAA0PgAAsD4AADQ+AACwPgAAbD4AAJw+AABsPgAAnD4AAJQ+AACcPgAAcD4AALA+AABwPgAAsD4AAJQ+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAlsIAAMhBAAD6QQAASEEAAMhBAAD6QQAASEEAAMjBAAD6QQAAlsIAAMjBAAD6wQAASEEAAMjBAAD6wQAASEEAAMhBAAD6wQAAlsIAAMhBAAD6wQAAlsIAAMjBAAD6QQAASEEAAMjBAAD6QQAASEEAAMhBAAD6wQAASEEAAMhBAAD6wQAASEEAAMjBAAD6wQAAlsIAAMhBAAD6QQAAlsIAAMhBAAD6QQAAlsIAAMjBAAD6wQAAlsIAAMjBAAD6wQAASEEAAMhBAAD6QQAASEEAAMhBAAD6QQAAlsIAAMhBAAD6wQAAlsIAAMhBAAD6QQAAlsIAAMjBAAD6QQAASEEAAMjBAAD6wQAASEEAAMjBAAD6wQAAlsIAAMjB////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_lleky")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qsy2r"]
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -56.25, 62.5, 75, 50),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAMjAAAD6QQAAlkEAAMjAAAD6QQAAlkEAAGHCAAD6QQAAYcIAAGHCAAD6wQAAlkEAAGHCAAD6wQAAlkEAAMjAAAD6wQAAYcIAAMjAAAD6wQAAYcIAAGHC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xtnyl"]
+resource_name = "UpperRArm"
+_surfaces = [{
+"aabb": AABB(-31.25, -56.25, -56.25, 62.5, 75, 50),
+"attribute_data": PackedByteArray("AACWPgAA9D4AAJY+AADcPgAApj4AANw+AACmPgAA9D4AAN4+AAAAAAAA7j4AAAAAAADuPgAAQD0AAN4+AABAPQAA+j4AAEQ+AAD6PgAAZD4AAOY+AABkPgAA5j4AAEQ+AADmPgAAnj4AAPo+AACePgAA+j4AAK4+AADmPgAArj4AADA+AAC4PgAAWD4AALg+AABYPgAA0D4AADA+AADQPgAAXD4AANA+AABcPgAAuD4AAII+AAC4PgAAgj4AANA+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAAYcIAAMjAAAD6QQAAlkEAAMjAAAD6QQAAlkEAAGHCAAD6QQAAYcIAAGHCAAD6wQAAlkEAAGHCAAD6wQAAlkEAAMjAAAD6wQAAYcIAAMjAAAD6wQAAYcIAAGHCAAD6QQAAlkEAAGHCAAD6QQAAlkEAAMjAAAD6wQAAlkEAAMjAAAD6wQAAlkEAAGHCAAD6wQAAYcIAAMjAAAD6QQAAYcIAAMjAAAD6QQAAYcIAAGHCAAD6wQAAYcIAAGHCAAD6wQAAlkEAAMjAAAD6QQAAlkEAAMjAAAD6QQAAYcIAAMjAAAD6wQAAYcIAAMjAAAD6QQAAYcIAAGHCAAD6QQAAlkEAAGHCAAD6wQAAlkEAAGHCAAD6wQAAYcIAAGHC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qsy2r")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7ng7v"]
+_surfaces = [{
+"aabb": AABB(-68.75, -43.75, -68.75, 150, 137.5, 137.5),
+"format": 34359742465,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgABgAMAA0ADQAHAAYABQAOAAwADAAGAAUADQAPAAQABAAHAA0ADwAOAAkACQAIAA8ABAAPAAgACAALAAQABQAEAAsACwAKAAUACQAOAAUABQAKAAkADQAQABEAEQAPAA0ADwARABIAEgAOAA8ADAAOABIAEgATAAwADAATABAAEAANAAwAEAACAAEAAQARABAAEQABAAAAAAASABEAEwASAAAAAAADABMAEwADAAIAAgAQABMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("AKA+QgAASL8AgIlBAKA+QgAASL8AgInBAGA4QgDAj8EAAHrBAGA4QgDAj8EAAHpBAICJwgAAyEEAgInCAICJwgAAyEEAgIlCAICJwgAAL8IAgIlCAICJwgAAL8IAgInCAICJQgCAu0IAAHrCAICJQgCAu0IAAHpCAICJwgCAu0IAgIlCAICJwgCAu0IAgInCAACWQgAAL8IAAHpCAACWQgAAL8IAAHrCAICiQgAAyEEAgIlCAICiQgAAyEEAgInCACCZQgCA1MEAAPrBAGCfQgAA+kAAgAnCAGCfQgAA+kAAgAlCACCZQgCA1MEAAPpB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_y4rjy"]
+resource_name = "Head_1"
+_surfaces = [{
+"aabb": AABB(-68.75, -43.75, -68.75, 150, 137.5, 137.5),
+"attribute_data": PackedByteArray("AAABPgAAHD4AABc+AAAcPgAAFj4AACg+AAACPgAAKD4AAMg9AABoPgAAPD4AAGg+AAA8PgAAij4AAMg9AACKPgAAsD0AAEQ+AACwPQAAij4AAAAAAACMPgAAAAAAAEA+AADIPQAAAAAAAEA+AACAOwAAQD4AAKg9AADIPQAAsD0AAAAAAAAwPQAAwD0AADA9AAC4PfhcsD0AAAAAoKOvPQAAgDtkLjg+AAAAAGQuDD4AAMA9ZC4MPgAAwD1kLjg+AAA8PpzRCz4AAMg9nNELPgAA0D34Mb49AAA4Pvgxvj0AAMA9ZC4MPgAAAABkLgw+AAAAPAAAwD0AAMA9WLnAPQAAyD0AADw+AAA8PgAAPD4AALA9AAAAAAAAwD0AADA9AAAAAAAAMD0AAAAAAAAAAAAAOD4AADg+AAAkPmz0LD4AACY+MN0WPgAAPD6c0Qs+AAD0PTDdFj4AAMg9nNELPgAA0D0AADg+AAD4PWz0LD4XmQE/AK+rPAVX8T5Aris87b3yPgAAAAAAAAM/AAAAAAAA4D4AAAQ+AIDaPgAAKD4AgM8+AAAoPgAAyj4AAAQ+AABwPoB0szsAAII+AAAAAAAAgj6gEBo9/bp6PuBHJT0AAKg+AADwPgAArT4AAN4+AAC3PgAA3j4AALw+AADwPg=="),
+"format": 34359742487,
+"index_count": 108,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAHAAdAB4AHgAfABwABQAEACAAIAAhAAUAIgAjACQAJAAlACIAJgAnACgAKAApACYAKQAoACoAKgArACkALAArACoAKgAtACwALAAtACcAJwAmACwALgAvADAAMAAxAC4AMgAzADQANAA1ADIANgA3ADgAOAA5ADYAOgA7ADwAPAA9ADoA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 62,
+"vertex_data": PackedByteArray("AKA+QgAASL8AgIlBAKA+QgAASL8AgInBAGA4QgDAj8EAAHrBAGA4QgDAj8EAAHpBAICJwgAAyEEAgInCAICJwgAAyEEAgIlCAICJwgAAL8IAgIlCAICJwgAAL8IAgInCAICJQgCAu0IAAHrCAICJQgCAu0IAAHpCAICJwgCAu0IAgIlCAICJwgCAu0IAgInCAICJwgAAL8IAgIlCAACWQgAAL8IAAHpCAACWQgAAL8IAAHrCAICJwgAAL8IAgInCAICJwgAAyEEAgIlCAICiQgAAyEEAgIlCAACWQgAAL8IAAHpCAICJwgAAL8IAgIlCAACWQgAAL8IAAHrCAICiQgAAyEEAgInCAICJwgAAyEEAgInCAICJwgAAL8IAgInCAICiQgAAyEEAgInCAICiQgAAyEEAgIlCAICJQgCAu0IAAHpCAICJQgCAu0IAAHrCAICJwgAAyEEAgInCAICiQgAAyEEAgInCAICJQgCAu0IAAHrCAICJwgCAu0IAgInCAICJwgCAu0IAgInCAICJwgCAu0IAgIlCAICJQgCAu0IAAHpCAICiQgAAyEEAgIlCAICJwgAAyEEAgIlCAICJwgCAu0IAgIlCAACWQgAAL8IAAHrCACCZQgCA1MEAAPrBAGCfQgAA+kAAgAnCAICiQgAAyEEAgInCAGCfQgAA+kAAgAlCAICiQgAAyEEAgIlCAACWQgAAL8IAAHpCACCZQgCA1MEAAPpBACCZQgCA1MEAAPrBAGA4QgDAj8EAAHrBAKA+QgAASL8AgInBAGCfQgAA+kAAgAnCAGCfQgAA+kAAgAnCAKA+QgAASL8AgInBAKA+QgAASL8AgIlBAGCfQgAA+kAAgAlCACCZQgCA1MEAAPpBAGCfQgAA+kAAgAlCAKA+QgAASL8AgIlBAGA4QgDAj8EAAHpBACCZQgCA1MEAAPpBAGA4QgDAj8EAAHpBAGA4QgDAj8EAAHrBACCZQgCA1MEAAPrBVPVUdf////9U9VR1/////1T1VHX/////VPVUdf////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f1R1/v//v/9/VHX///+//39Udf7//7//f1R1/v//v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/Teywk/////9N7LCT/////03ssJP/////Teywk/////9U9f//AAD/v1T1//8AAP+/VPX//wAA/79U9f//AAD/vwAA/3//f/+/AAD/f/9//7//f/9/////v/9//3////+//3//f////7//f/9/////v1T1VHUAAACAVPVUdQAAAIBU9VR1/v///1T1VHX+//7/VPVUdQAAAIBU9VR1AAAAgFT1VHX+////VPVUdf7//v/ZqoWD+OyJ3NmqhYP37Inc2aqFg/jsidzZqoWD+OyJ3BObExv/////E5sTG/////8TmxMb/////xObExv/////ePwl1Wp6E/x4/CXVanoT/Hj8JdVqehP8ePwl1Wp6E/wonNbj/////yic1uP/////KJzW4/////8onNbj/////w==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7ng7v")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_id2lk"]
+_surfaces = [{
+"aabb": AABB(-18.75, 6.25, -97.5, 37.5, 37.5, 47.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABwALAAoACgAEAAcA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AACWQQAAyEAAAEjCAACWQQAAL0IAAEjCAACWQQAAL0IAAK/CAACWQQAAyEAAAK/CAACWwQAAL0IAAK/CAACWwQAAL0IAAEjCAACWwQAAyEAAAEjCAACWwQAAyEAAAK/CAACWQQAASEEAAMPCAACWQQAAFkIAAMPCAACWwQAAFkIAAMPCAACWwQAASEEAAMPC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6cm7s"]
+resource_name = "ear"
+_surfaces = [{
+"aabb": AABB(-18.75, 6.25, -97.5, 37.5, 37.5, 47.5),
+"attribute_data": PackedByteArray("Zmb0PgAAvD5mZvQ+AACwPjMzAD8AALA+MzMAPwAAvD5mZuY7AAD2PpqZ+TwAAPY+mpn5PAAAAT9mZuY7AAABPwAAwD0Kxvc+AADAPQbjAT8AAJA9BuMBPwAAkD0Kxvc+AABwPrDPQT0AAIQ+sM9BPQAAhD7Y55A9AABwPtjnkD0AAPA+AADAPAAA/D4AAMA8AAD8PgAAQD0AAPA+AABAPQAABD4AAOo+AAAEPgAA4j4AABw+AADiPgAAHD4AAOo+AACQPQrG9z4AAJA9AAD0PgAAwD0AAPQ+AADAPQrG9z7NzAE/AACyPs3MAT8AALo+AACEPtjnkD0AAIQ+AACgPQAAcD4AAKA9AABwPtjnkD3NzEw6AAAAP83MTDoAAPg+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABwAiACMAIwAEAAcA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AACWQQAAyEAAAEjCAACWQQAAL0IAAEjCAACWQQAAL0IAAK/CAACWQQAAyEAAAK/CAACWwQAAL0IAAK/CAACWwQAAL0IAAEjCAACWwQAAyEAAAEjCAACWwQAAyEAAAK/CAACWQQAAL0IAAK/CAACWQQAAL0IAAEjCAACWwQAAL0IAAEjCAACWwQAAL0IAAK/CAACWwQAAyEAAAEjCAACWQQAAyEAAAEjCAACWQQAAyEAAAK/CAACWwQAAyEAAAK/CAACWwQAAL0IAAEjCAACWQQAAL0IAAEjCAACWQQAAyEAAAEjCAACWwQAAyEAAAEjCAACWQQAASEEAAMPCAACWQQAAFkIAAMPCAACWwQAAFkIAAMPCAACWwQAASEEAAMPCAACWwQAAL0IAAK/CAACWwQAAFkIAAMPCAACWQQAAFkIAAMPCAACWQQAAL0IAAK/CAACWQQAAFkIAAMPCAACWQQAASEEAAMPCAACWQQAAyEAAAK/CAACWQQAASEEAAMPCAACWwQAASEEAAMPCAACWwQAAyEAAAK/CAACWwQAASEEAAMPCAACWwQAAFkIAAMPC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/OrH//////786sf//////vzqx//////+/OrH//////7////9//////////3//////OrEAAP///786sQAA////vzqxAAD///+/OrEAAP///78AAP9//3//vwAA/3//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_id2lk")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_emniv"]
+_surfaces = [{
+"aabb": AABB(-18.75, 6.25, -97.5, 37.5, 37.5, 47.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABwALAAoACgAEAAcA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AACWQQAAyEAAAEjCAACWQQAAL0IAAEjCAACWQQAAL0IAAK/CAACWQQAAyEAAAK/CAACWwQAAL0IAAK/CAACWwQAAL0IAAEjCAACWwQAAyEAAAEjCAACWwQAAyEAAAK/CAACWQQAASEEAAMPCAACWQQAAFkIAAMPCAACWwQAAFkIAAMPCAACWwQAASEEAAMPC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nbmgj"]
+resource_name = "ear_1"
+_surfaces = [{
+"aabb": AABB(-18.75, 6.25, -97.5, 37.5, 37.5, 47.5),
+"attribute_data": PackedByteArray("zcwwPgAAAT/NzDA+AAD2Ps3MSD4AAPY+zcxIPgAAAT+amY0+AAD2PpqZmT4AAPY+mpmZPgAAAT+amY0+AAABPwAA+D0Kxvc+AAD4PQbjAT8AAMg9BuMBPwAAyD0Kxvc+AACoPvY58j4AALQ+9jnyPgAAtD72Of4+AACoPvY5/j4AAFQ+AAD2PgAAbD4AAPY+AABsPgAAAT8AAFQ+AAABPwAA9D4AAMY+AAD0PgAAvj4AAAA/AAC+PgAAAD8AAMY+AADIPQrG9z4AAMg9AAD0PgAA+D0AAPQ+AAD4PQrG9z4zM08+AAD4PjMzTz4AAAA/AAC0PvY5/j4AALQ+AAABPwAAqD4AAAE/AACoPvY5/j5mZoo+AAAAP2Zmij4AAPg+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABwAiACMAIwAEAAcA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AACWQQAAyEAAAEjCAACWQQAAL0IAAEjCAACWQQAAL0IAAK/CAACWQQAAyEAAAK/CAACWwQAAL0IAAK/CAACWwQAAL0IAAEjCAACWwQAAyEAAAEjCAACWwQAAyEAAAK/CAACWQQAAL0IAAK/CAACWQQAAL0IAAEjCAACWwQAAL0IAAEjCAACWwQAAL0IAAK/CAACWwQAAyEAAAEjCAACWQQAAyEAAAEjCAACWQQAAyEAAAK/CAACWwQAAyEAAAK/CAACWwQAAL0IAAEjCAACWQQAAL0IAAEjCAACWQQAAyEAAAEjCAACWwQAAyEAAAEjCAACWQQAASEEAAMPCAACWQQAAFkIAAMPCAACWwQAAFkIAAMPCAACWwQAASEEAAMPCAACWwQAAL0IAAK/CAACWwQAAFkIAAMPCAACWQQAAFkIAAMPCAACWQQAAL0IAAK/CAACWQQAAFkIAAMPCAACWQQAASEEAAMPCAACWQQAAyEAAAK/CAACWQQAASEEAAMPCAACWwQAASEEAAMPCAACWwQAAyEAAAK/CAACWwQAASEEAAMPCAACWwQAAFkIAAMPC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/OrH//////786sf//////vzqx//////+/OrH//////7////9//////////3//////OrEAAP///786sQAA////vzqxAAD///+/OrEAAP///78AAP9//3//vwAA/3//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_emniv")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_2k7b4"]
+_surfaces = [{
+"aabb": AABB(58.75, -26.875, -2.5, 15, 15, 12.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABAAHAAsACwAKAAQA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AICTQgAA18EAACBBAICTQgAAPsEAACBBAICTQgAAPsGivAY+AICTQgAA18GivAY+AABrQgAAPsGivAY+AABrQgAAPsEAACBBAABrQgAA18EAACBBAABrQgAA18GivAY+AICTQgAAw8EAACDAAICTQgAAZsEAACDAAABrQgAAZsEAACDAAABrQgAAw8EAACDA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pgueh"]
+resource_name = "Tooth"
+_surfaces = [{
+"aabb": AABB(58.75, -26.875, -2.5, 15, 15, 12.5),
+"attribute_data": PackedByteArray("ZmacPgAA/j5mZpw+AAD2Po4Voj4AAPY+jhWiPgAA/j5y6rc+AAD2PpqZvT4AAPY+mpm9PgAA/j5y6rc+AAD+PgAAVD4AAJg9AABUPgAAsD0AAEQ+AACwPQAARD4AAJg9AABYPgAAmD0AAGg+AACYPQAAaD4AALA9AABYPgAAsD0AADA+AADsPgAAQD4AAOw+AABAPgAA9D4AADA+AAD0PgAA5j4AALY+AADmPgAAsD4AAO4+AACwPgAA7j4AALY+AAB8PgAAqD0AAHw+AACwPQAAbD4AALA9AABsPgAAqD2amaM+WlX3PpqZoz6mqvw+AACwPgAAyD4AALA+AADGPgAAuD4AAMY+AAC4PgAAyD5mZrY+pqr8PmZmtj5aVfc+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABAAHACIAIgAjAAQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AICTQgAA18EAACBBAICTQgAAPsEAACBBAICTQgAAPsGivAY+AICTQgAA18GivAY+AABrQgAAPsGivAY+AABrQgAAPsEAACBBAABrQgAA18EAACBBAABrQgAA18GivAY+AICTQgAAPsGivAY+AICTQgAAPsEAACBBAABrQgAAPsEAACBBAABrQgAAPsGivAY+AABrQgAA18EAACBBAICTQgAA18EAACBBAICTQgAA18GivAY+AABrQgAA18GivAY+AABrQgAAPsEAACBBAICTQgAAPsEAACBBAICTQgAA18EAACBBAABrQgAA18EAACBBAICTQgAAw8EAACDAAICTQgAAZsEAACDAAABrQgAAZsEAACDAAABrQgAAw8EAACDAAABrQgAAPsGivAY+AABrQgAAZsEAACDAAICTQgAAZsEAACDAAICTQgAAPsGivAY+AICTQgAAZsEAACDAAICTQgAAw8EAACDAAICTQgAA18GivAY+AICTQgAAw8EAACDAAABrQgAAw8EAACDAAABrQgAA18GivAY+AABrQgAAw8EAACDAAABrQgAAZsEAACDA////f/////////9//////////3/+////////f/7/AIAAAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/W77//wAA/79bvv//AAD/v1u+//8AAP+/W77//wAA/7////9//P///////3/9/wCAW74AAAAA/79bvgAAAAD/v1u+AAAAAP+/W74AAAAA/78AAP9//3//vwAA/3//f/6/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_2k7b4")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cffej"]
+_surfaces = [{
+"aabb": AABB(58.75, -8.125, -2.5, 15, 15, 12.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABwALAAoACgAEAAcA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AICTQgAAAsEAACBBAICTQgAA3EAAACBBAICTQgAA3ECivAY+AICTQgAAAsGivAY+AABrQgAA3ECivAY+AABrQgAA3EAAACBBAABrQgAAAsEAACBBAABrQgAAAsGivAY+AICTQgAAtMAAACDAAICTQgAAjEAAACDAAABrQgAAjEAAACDAAABrQgAAtMAAACDA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bpsi7"]
+resource_name = "Tooth_1"
+_surfaces = [{
+"aabb": AABB(58.75, -8.125, -2.5, 15, 15, 12.5),
+"attribute_data": PackedByteArray("ZmacPgAA/j5mZpw+AAD2Po4Voj4AAPY+jhWiPgAA/j5y6rc+AAD2PpqZvT4AAPY+mpm9PgAA/j5y6rc+AAD+PgAAVD4AAJg9AABUPgAAsD0AAEQ+AACwPQAARD4AAJg9AABYPgAAmD0AAGg+AACYPQAAaD4AALA9AABYPgAAsD0AADA+AADsPgAAQD4AAOw+AABAPgAA9D4AADA+AAD0PgAA5j4AALY+AADmPgAAsD4AAO4+AACwPgAA7j4AALY+AAB8PgAAqD0AAHw+AACwPQAAbD4AALA9AABsPgAAqD2amaM+WlX3PpqZoz6mqvw+AACwPgAAyD4AALA+AADGPgAAuD4AAMY+AAC4PgAAyD5mZrY+pqr8PmZmtj5aVfc+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABwAiACMAIwAEAAcA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AICTQgAAAsEAACBBAICTQgAA3EAAACBBAICTQgAA3ECivAY+AICTQgAAAsGivAY+AABrQgAA3ECivAY+AABrQgAA3EAAACBBAABrQgAAAsEAACBBAABrQgAAAsGivAY+AICTQgAA3ECivAY+AICTQgAA3EAAACBBAABrQgAA3EAAACBBAABrQgAA3ECivAY+AABrQgAAAsEAACBBAICTQgAAAsEAACBBAICTQgAAAsGivAY+AABrQgAAAsGivAY+AABrQgAA3EAAACBBAICTQgAA3EAAACBBAICTQgAAAsEAACBBAABrQgAAAsEAACBBAICTQgAAtMAAACDAAICTQgAAjEAAACDAAABrQgAAjEAAACDAAABrQgAAtMAAACDAAABrQgAA3ECivAY+AABrQgAAjEAAACDAAICTQgAAjEAAACDAAICTQgAA3ECivAY+AICTQgAAjEAAACDAAICTQgAAtMAAACDAAICTQgAAAsGivAY+AICTQgAAtMAAACDAAABrQgAAtMAAACDAAABrQgAAAsGivAY+AABrQgAAtMAAACDAAABrQgAAjEAAACDA////f/////////9//////////3/+////////f/7/AIAAAP9//3/+vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/W77//wAA/79bvv//AAD/v1u+//8AAP+/W77//wAA/7////9//P///////3/9/wCAW74AAAAA/79bvgAAAAD/v1u+AAAAAP+/W74AAAAA/78AAP9//38AwAAA/3//f/6/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_cffej")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_m6pk7"]
+_surfaces = [{
+"aabb": AABB(58.75, 10.625, -2.5, 15, 15, 12.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABAAHAAsACwAKAAQA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AICTQgAAKkEAACBBAICTQgAAzUEAACBBAICTQgAAzUGivAY+AICTQgAAKkGivAY+AABrQgAAzUGivAY+AABrQgAAzUEAACBBAABrQgAAKkEAACBBAABrQgAAKkGivAY+AICTQgAAUkEAACDAAICTQgAAuUEAACDAAABrQgAAuUEAACDAAABrQgAAUkEAACDA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_w1iem"]
+resource_name = "Tooth_2"
+_surfaces = [{
+"aabb": AABB(58.75, 10.625, -2.5, 15, 15, 12.5),
+"attribute_data": PackedByteArray("ZmacPgAA/j5mZpw+AAD2Po4Voj4AAPY+jhWiPgAA/j5y6rc+AAD2PpqZvT4AAPY+mpm9PgAA/j5y6rc+AAD+PgAAVD4AAJg9AABUPgAAsD0AAEQ+AACwPQAARD4AAJg9AABYPgAAmD0AAGg+AACYPQAAaD4AALA9AABYPgAAsD0AADA+AADsPgAAQD4AAOw+AABAPgAA9D4AADA+AAD0PgAA5j4AALY+AADmPgAAsD4AAO4+AACwPgAA7j4AALY+AAB8PgAAqD0AAHw+AACwPQAAbD4AALA9AABsPgAAqD2amaM+WlX3PpqZoz6mqvw+AACwPgAAyD4AALA+AADGPgAAuD4AAMY+AAC4PgAAyD5mZrY+pqr8PmZmtj5aVfc+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABAAHACIAIgAjAAQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AICTQgAAKkEAACBBAICTQgAAzUEAACBBAICTQgAAzUGivAY+AICTQgAAKkGivAY+AABrQgAAzUGivAY+AABrQgAAzUEAACBBAABrQgAAKkEAACBBAABrQgAAKkGivAY+AICTQgAAzUGivAY+AICTQgAAzUEAACBBAABrQgAAzUEAACBBAABrQgAAzUGivAY+AABrQgAAKkEAACBBAICTQgAAKkEAACBBAICTQgAAKkGivAY+AABrQgAAKkGivAY+AABrQgAAzUEAACBBAICTQgAAzUEAACBBAICTQgAAKkEAACBBAABrQgAAKkEAACBBAICTQgAAUkEAACDAAICTQgAAuUEAACDAAABrQgAAuUEAACDAAABrQgAAUkEAACDAAABrQgAAzUGivAY+AABrQgAAuUEAACDAAICTQgAAuUEAACDAAICTQgAAzUGivAY+AICTQgAAuUEAACDAAICTQgAAUkEAACDAAICTQgAAKkGivAY+AICTQgAAUkEAACDAAABrQgAAUkEAACDAAABrQgAAKkGivAY+AABrQgAAUkEAACDAAABrQgAAuUEAACDA////f/////////9//////////3/+////////f/7/AIAAAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/W77//wAA/79bvv//AAD/v1u+//8AAP+/W77//wAA/7////9//P///////3/9/wCAW74AAAAA/79bvgAAAAD/v1u+AAAAAP+/W74AAAAA/78AAP9//3//vwAA/3//f/6/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_m6pk7")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_4r13m"]
+_surfaces = [{
+"aabb": AABB(58.75, -8.125, 10, 15, 15, 12.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAwACAAkACQAIAAMAAwAIAAsACwAHAAMABwALAAoACgAEAAcA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AICTQgAAAsEAALRBAICTQgAA3EAAALRBAICTQgAA3EDzGkpBAICTQgAAAsHzGkpBAABrQgAA3EDzGkpBAABrQgAA3EAAALRBAABrQgAAAsEAALRBAABrQgAAAsHzGkpBAICTQgAAtMAAACBBAICTQgAAjEAAACBBAABrQgAAjEAAACBBAABrQgAAtMAAACBB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_u3n4x"]
+resource_name = "Tooth_3"
+_surfaces = [{
+"aabb": AABB(58.75, -8.125, 10, 15, 15, 12.5),
+"attribute_data": PackedByteArray("ZmacPgAA/j5mZpw+AAD2Po4Voj4AAPY+jhWiPgAA/j5y6rc+AAD2PpqZvT4AAPY+mpm9PgAA/j5y6rc+AAD+PgAAVD4AAJg9AABUPgAAsD0AAEQ+AACwPQAARD4AAJg9AABYPgAAmD0AAGg+AACYPQAAaD4AALA9AABYPgAAsD0AADA+AADsPgAAQD4AAOw+AABAPgAA9D4AADA+AAD0PgAA5j4AALY+AADmPgAAsD4AAO4+AACwPgAA7j4AALY+AAB8PgAAqD0AAHw+AACwPQAAbD4AALA9AABsPgAAqD2amaM+WlX3PpqZoz6mqvw+AACwPgAAyD4AALA+AADGPgAAuD4AAMY+AAC4PgAAyD5mZrY+pqr8PmZmtj5aVfc+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAwACABwAHAAdAAMAHgAfACAAIAAhAB4ABwAiACMAIwAEAAcA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AICTQgAAAsEAALRBAICTQgAA3EAAALRBAICTQgAA3EDzGkpBAICTQgAAAsHzGkpBAABrQgAA3EDzGkpBAABrQgAA3EAAALRBAABrQgAAAsEAALRBAABrQgAAAsHzGkpBAICTQgAA3EDzGkpBAICTQgAA3EAAALRBAABrQgAA3EAAALRBAABrQgAA3EDzGkpBAABrQgAAAsEAALRBAICTQgAAAsEAALRBAICTQgAAAsHzGkpBAABrQgAAAsHzGkpBAABrQgAA3EAAALRBAICTQgAA3EAAALRBAICTQgAAAsEAALRBAABrQgAAAsEAALRBAICTQgAAtMAAACBBAICTQgAAjEAAACBBAABrQgAAjEAAACBBAABrQgAAtMAAACBBAABrQgAA3EDzGkpBAABrQgAAjEAAACBBAICTQgAAjEAAACBBAICTQgAA3EDzGkpBAICTQgAAjEAAACBBAICTQgAAtMAAACBBAICTQgAAAsHzGkpBAICTQgAAtMAAACBBAABrQgAAtMAAACBBAABrQgAAAsHzGkpBAABrQgAAtMAAACBBAABrQgAAjEAAACBB////f/////////9//////////3/+////////f/7/AIAAAP9//3/+vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/W77//wAA/79bvv//AAD/v1u+//8AAP+/W77//wAA/7////9//f///////3/8/wCAW74AAAAA/79bvgAAAAD/v1u+AAAAAP+/W74AAAAA/78AAP9//38AwAAA/3//f/6/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_4r13m")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ogxec"]
+_surfaces = [{
+"aabb": AABB(58.75, -26.875, 10, 15, 15, 12.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABAAHAAsACwAKAAQA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AICTQgAA18EAALRBAICTQgAAPsEAALRBAICTQgAAPsHzGkpBAICTQgAA18HzGkpBAABrQgAAPsHzGkpBAABrQgAAPsEAALRBAABrQgAA18EAALRBAABrQgAA18HzGkpBAICTQgAAw8EAACBBAICTQgAAZsEAACBBAABrQgAAZsEAACBBAABrQgAAw8EAACBB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rneiu"]
+resource_name = "Tooth_4"
+_surfaces = [{
+"aabb": AABB(58.75, -26.875, 10, 15, 15, 12.5),
+"attribute_data": PackedByteArray("ZmacPgAA/j5mZpw+AAD2Po4Voj4AAPY+jhWiPgAA/j5y6rc+AAD2PpqZvT4AAPY+mpm9PgAA/j5y6rc+AAD+PgAAVD4AAJg9AABUPgAAsD0AAEQ+AACwPQAARD4AAJg9AABYPgAAmD0AAGg+AACYPQAAaD4AALA9AABYPgAAsD0AADA+AADsPgAAQD4AAOw+AABAPgAA9D4AADA+AAD0PgAA5j4AALY+AADmPgAAsD4AAO4+AACwPgAA7j4AALY+AAB8PgAAqD0AAHw+AACwPQAAbD4AALA9AABsPgAAqD2amaM+WlX3PpqZoz6mqvw+AACwPgAAyD4AALA+AADGPgAAuD4AAMY+AAC4PgAAyD5mZrY+pqr8PmZmtj5aVfc+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABAAHACIAIgAjAAQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AICTQgAA18EAALRBAICTQgAAPsEAALRBAICTQgAAPsHzGkpBAICTQgAA18HzGkpBAABrQgAAPsHzGkpBAABrQgAAPsEAALRBAABrQgAA18EAALRBAABrQgAA18HzGkpBAICTQgAAPsHzGkpBAICTQgAAPsEAALRBAABrQgAAPsEAALRBAABrQgAAPsHzGkpBAABrQgAA18EAALRBAICTQgAA18EAALRBAICTQgAA18HzGkpBAABrQgAA18HzGkpBAABrQgAAPsEAALRBAICTQgAAPsEAALRBAICTQgAA18EAALRBAABrQgAA18EAALRBAICTQgAAw8EAACBBAICTQgAAZsEAACBBAABrQgAAZsEAACBBAABrQgAAw8EAACBBAABrQgAAPsHzGkpBAABrQgAAZsEAACBBAICTQgAAZsEAACBBAICTQgAAPsHzGkpBAICTQgAAZsEAACBBAICTQgAAw8EAACBBAICTQgAA18HzGkpBAICTQgAAw8EAACBBAABrQgAAw8EAACBBAABrQgAA18HzGkpBAABrQgAAw8EAACBBAABrQgAAZsEAACBB////f/////////9//////////3/+////////f/7/AIAAAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/W77//wAA/79bvv//AAD/v1u+//8AAP+/W77//wAA/7////9//P///////3/9/wCAW74AAAAA/79bvgAAAAD/v1u+AAAAAP+/W74AAAAA/78AAP9//3//vwAA/3//f/6/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ogxec")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ydpub"]
+_surfaces = [{
+"aabb": AABB(58.75, 10.625, 10, 15, 15, 12.5),
+"format": 34359742465,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUACAAJAAoACgALAAgABAAKAAkACQACAAQAAgAJAAgACAADAAIAAwAIAAsACwAHAAMABAAHAAsACwAKAAQA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AICTQgAAKkEAALRBAICTQgAAzUEAALRBAICTQgAAzUHzGkpBAICTQgAAKkHzGkpBAABrQgAAzUHzGkpBAABrQgAAzUEAALRBAABrQgAAKkEAALRBAABrQgAAKkHzGkpBAICTQgAAUkEAACBBAICTQgAAuUEAACBBAABrQgAAuUEAACBBAABrQgAAUkEAACBB")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_30a73"]
+resource_name = "Tooth_5"
+_surfaces = [{
+"aabb": AABB(58.75, 10.625, 10, 15, 15, 12.5),
+"attribute_data": PackedByteArray("ZmacPgAA/j5mZpw+AAD2Po4Voj4AAPY+jhWiPgAA/j5y6rc+AAD2PpqZvT4AAPY+mpm9PgAA/j5y6rc+AAD+PgAAVD4AAJg9AABUPgAAsD0AAEQ+AACwPQAARD4AAJg9AABYPgAAmD0AAGg+AACYPQAAaD4AALA9AABYPgAAsD0AADA+AADsPgAAQD4AAOw+AABAPgAA9D4AADA+AAD0PgAA5j4AALY+AADmPgAAsD4AAO4+AACwPgAA7j4AALY+AAB8PgAAqD0AAHw+AACwPQAAbD4AALA9AABsPgAAqD2amaM+WlX3PpqZoz6mqvw+AACwPgAAyD4AALA+AADGPgAAuD4AAMY+AAC4PgAAyD5mZrY+pqr8PmZmtj5aVfc+"),
+"format": 34359742487,
+"index_count": 60,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQAGAAZABoAGgAbABgAAgAcAB0AHQADAAIAHgAfACAAIAAhAB4ABAAHACIAIgAjAAQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 36,
+"vertex_data": PackedByteArray("AICTQgAAKkEAALRBAICTQgAAzUEAALRBAICTQgAAzUHzGkpBAICTQgAAKkHzGkpBAABrQgAAzUHzGkpBAABrQgAAzUEAALRBAABrQgAAKkEAALRBAABrQgAAKkHzGkpBAICTQgAAzUHzGkpBAICTQgAAzUEAALRBAABrQgAAzUEAALRBAABrQgAAzUHzGkpBAABrQgAAKkEAALRBAICTQgAAKkEAALRBAICTQgAAKkHzGkpBAABrQgAAKkHzGkpBAABrQgAAzUEAALRBAICTQgAAzUEAALRBAICTQgAAKkEAALRBAABrQgAAKkEAALRBAICTQgAAUkEAACBBAICTQgAAuUEAACBBAABrQgAAuUEAACBBAABrQgAAUkEAACBBAABrQgAAzUHzGkpBAABrQgAAuUEAACBBAICTQgAAuUEAACBBAICTQgAAzUHzGkpBAICTQgAAuUEAACBBAICTQgAAUkEAACBBAICTQgAAKkHzGkpBAICTQgAAUkEAACBBAABrQgAAUkEAACBBAABrQgAAKkHzGkpBAABrQgAAUkEAACBBAABrQgAAuUEAACBB////f/////////9//////////3/+////////f/7/AIAAAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/W77//wAA/79bvv//AAD/v1u+//8AAP+/W77//wAA/7////9//P///////3/9/wCAW74AAAAA/79bvgAAAAD/v1u+AAAAAP+/W74AAAAA/78AAP9//3//vwAA/3//f/6/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ydpub")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_7eh1i"]
+_surfaces = [{
+"aabb": AABB(-31.25, -12.5, -56.25, 62.5, 162.5, 112.5),
+"format": 34359742465,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQAAgABAAUABQAEAAIABgAAAAMAAwAHAAYABQABAAAAAAAGAAUAAwACAAQABAAHAAMA"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD6QQAASMEAAGFCAAD6QQAAFkMAAGFCAAD6QQAAFkMAAGHCAAD6QQAASMEAAGHCAAD6wQAAFkMAAGHCAAD6wQAAFkMAAGFCAAD6wQAASMEAAGFCAAD6wQAASMEAAGHC")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kl2ib"]
+resource_name = "Torso_1"
+_surfaces = [{
+"aabb": AABB(-31.25, -12.5, -56.25, 62.5, 162.5, 112.5),
+"attribute_data": PackedByteArray("AABAPgAARD4AAEA+AAC4PQAAhD4AALg9AACEPgAARD4AAEA+AABIPgAAhD4AAEg+AACEPgAAmD4AAEA+AACYPgAAbD4AAAAAAABsPgAAkD0AAEQ+AACQPQAARD4AAAAAAACGPgAAWD4AAJo+AABYPgAAmj4AAJA+AACGPgAAkD4AAIY+AAAAAAAAmj4AAAAAAACaPgAA0D0AAIY+AADQPQAAhj4AAFQ+AACGPgAA2D0AAJo+AADYPQAAmj4AAFQ+"),
+"format": 34359742487,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAAFAAYABgAHAAQACAAJAAoACgALAAgADAANAA4ADgAPAAwAEAARABIAEgATABAAFAAVABYAFgAXABQA"),
+"material": SubResource("StandardMaterial3D_gfhvc"),
+"name": "BlockyZombieTexture.png",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD6QQAASMEAAGFCAAD6QQAAFkMAAGFCAAD6QQAAFkMAAGHCAAD6QQAASMEAAGHCAAD6wQAAFkMAAGHCAAD6wQAAFkMAAGFCAAD6wQAASMEAAGFCAAD6wQAASMEAAGHCAAD6QQAAFkMAAGHCAAD6QQAAFkMAAGFCAAD6wQAAFkMAAGFCAAD6wQAAFkMAAGHCAAD6wQAASMEAAGFCAAD6QQAASMEAAGFCAAD6QQAASMEAAGHCAAD6wQAASMEAAGHCAAD6wQAAFkMAAGFCAAD6QQAAFkMAAGFCAAD6QQAASMEAAGFCAAD6wQAASMEAAGFCAAD6QQAASMEAAGHCAAD6QQAAFkMAAGHCAAD6wQAAFkMAAGHCAAD6wQAASMEAAGHC////f/////////9//////////3//////////f/////8AAP9//3//vwAA/3//f/+/AAD/f/9//78AAP9//3//v/9///////+//3///////7//f///////v/9///////+//38AAP///7//fwAA////v/9/AAD///+//38AAP///7//f/9/////v/9//3////+//3//f////7//f/9/////v/////8AAP+//////wAA/7//////AAD/v/////8AAP+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_7eh1i")
+
+[sub_resource type="Animation" id="Animation_2a26r"]
+resource_name = "Walk"
+tracks/0/type = "position_3d"
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/path = NodePath("Torso")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 162.5, 0, 0.125, 1, 0, 158.625, 0, 0.333333, 1, 0, 168.75, 0, 0.666667, 1, 0, 162.5, 0, 0.791667, 1, 0, 158.625, 0, 1, 1, 0, 168.75, 0)
+tracks/1/type = "rotation_3d"
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/path = NodePath("Torso")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0.0436194, 0, 0.999048, 0.0416667, 1, 0, 0.0388511, 0, 0.999245, 0.0833333, 1, 0, 0.0321134, 0, 0.999484, 0.125, 1, 0, 0.0238597, 0, 0.999715, 0.208333, 1, 0, 0.00462086, 0, 0.999989, 0.233333, 1, 0, -0.00133324, 0, 0.999999, 0.291667, 1, 0, -0.0152256, 0, 0.999884, 0.333333, 1, 0, -0.0242383, 0, 0.999706, 0.375, 1, 0, -0.0320377, 0, 0.999487, 0.416667, 1, 0, -0.0381698, 0, 0.999271, 0.533333, 1, 0, -0.0414397, 0, 0.999141, 0.583333, 1, 0, -0.0381698, 0, 0.999271, 0.666667, 1, 0, -0.0242383, 0, 0.999706, 0.75, 1, 0, -0.00545413, 0, 0.999985, 0.766667, 1, 0, -0.00145444, 0, 0.999999, 0.833333, 1, 0, 0.0145439, 0, 0.999894, 0.916667, 1, 0, 0.0321134, 0, 0.999484, 1, 1, 0, 0.0436194, 0, 0.999048)
+tracks/2/type = "position_3d"
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/path = NodePath("Torso/Arms")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 6.25, 125, -43.75)
+tracks/3/type = "rotation_3d"
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/path = NodePath("Torso/Arms")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, -0.707107, 0.707107)
+tracks/4/type = "rotation_3d"
+tracks/4/imported = true
+tracks/4/enabled = true
+tracks/4/path = NodePath("Torso/Legs/LeftLeg")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = PackedFloat32Array(0, 1, 0, 0, -0.55557, 0.83147, 0.125, 1, 0, 0, -0.242938, 0.970042, 0.3, 1, 0, 0, -0.00870324, 0.999962, 0.5, 1, 0, 0, 0.258819, 0.965926, 0.633333, 1, 0, 0, 0.0348995, 0.999391, 1, 1, 0, 0, -0.55557, 0.83147)
+tracks/5/type = "rotation_3d"
+tracks/5/imported = true
+tracks/5/enabled = true
+tracks/5/path = NodePath("Torso/Legs/RightLeg")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0.258819, 0.965926, 0.133333, 1, 0, 0, 0.0348995, 0.999391, 0.5, 1, 0, 0, -0.55557, 0.83147, 0.625, 1, 0, 0, -0.242938, 0.970042, 0.8, 1, 0, 0, -0.00870324, 0.999962, 1, 1, 0, 0, 0.258819, 0.965926)
+tracks/6/type = "rotation_3d"
+tracks/6/imported = true
+tracks/6/enabled = true
+tracks/6/path = NodePath("Torso/Arms/LeftArm")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = PackedFloat32Array(0, 1, 0.321439, -0.94693, 1.96818e-17, 5.79808e-17, 0.166667, 1, 0.191198, -0.981551, 1.17071e-17, 6.01007e-17, 0.333333, 1, 0.0574848, -0.998346, 3.51981e-18, 6.11291e-17, 0.458333, 1, -0.0436194, -0.999048, -2.67083e-18, 6.1172e-17, 0.633333, 1, 0.0761166, -0.997099, 4.66065e-18, 6.10527e-17, 0.8, 1, 0.189161, -0.981946, 1.15824e-17, 6.01249e-17, 0.966667, 1, 0.299745, -0.954019, 1.83535e-17, 5.84149e-17, 1, 1, 0.321439, -0.94693, 1.96818e-17, 5.79808e-17)
+tracks/7/type = "rotation_3d"
+tracks/7/imported = true
+tracks/7/enabled = true
+tracks/7/path = NodePath("Torso/Arms/RightArm")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, -0.19509, 0.980785, 0.166667, 1, 0, 0, -0.0218149, 0.999762, 0.533333, 1, 0, 0, 0.288196, 0.957571, 0.8, 1, 0, 0, 0.0130896, 0.999914, 1, 1, 0, 0, -0.19509, 0.980785)
+tracks/8/type = "rotation_3d"
+tracks/8/imported = true
+tracks/8/enabled = true
+tracks/8/path = NodePath("Torso/Legs/LeftLeg/LeftKnee")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = PackedFloat32Array(0, 1, 0, 0, 0.258819, 0.965926, 0.125, 1, 0, 0, 0.0327191, 0.999465, 0.166667, 1, 0, 0, 0.0339304, 0.999424, 0.266667, 1, 0, 0, 0.0368375, 0.999321, 0.466667, 1, 0, 0, 0.0426507, 0.99909, 0.5, 1, 0, 0, 0.0436194, 0.999048, 1, 1, 0, 0, 0.321439, 0.94693)
+tracks/9/type = "position_3d"
+tracks/9/imported = true
+tracks/9/enabled = true
+tracks/9/path = NodePath("Torso/Legs/LeftLeg/LowerLeg")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = PackedFloat32Array(1, 1, 0, -56.25, -31.25)
+tracks/10/type = "rotation_3d"
+tracks/10/imported = true
+tracks/10/enabled = true
+tracks/10/path = NodePath("Torso/Legs/LeftLeg/LowerLeg")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = PackedFloat32Array(0, 1, 0, 0, 0.55557, 0.83147, 0.125, 1, 0, 0, 0.0218149, 0.999762, 0.5, 1, 0, 0, 0.0654031, 0.997859, 0.666667, 1, 0, 0, 0.422618, 0.906308, 1, 1, 0, 0, 0.707107, 0.707107)
+tracks/11/type = "rotation_3d"
+tracks/11/imported = true
+tracks/11/enabled = true
+tracks/11/path = NodePath("Torso/Legs/RightLeg/RightKnee")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.166667, 1, 0, 0, 0.258819, 0.965926, 0.5, 1, 0, 0, 0.382683, 0.92388, 0.666667, 1, 0, 0, 0.0290556, 0.999578)
+tracks/12/type = "position_3d"
+tracks/12/imported = true
+tracks/12/enabled = true
+tracks/12/path = NodePath("Torso/Legs/RightLeg/LowerLLeg")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = PackedFloat32Array(0, 1, 0, -62.5, -31.25, 0.5, 1, 0, -56.25, -31.25)
+tracks/13/type = "rotation_3d"
+tracks/13/imported = true
+tracks/13/enabled = true
+tracks/13/path = NodePath("Torso/Legs/RightLeg/LowerLLeg")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.166667, 1, 0, 0, 0.402747, 0.915311, 0.5, 1, 0, 0, 0.707107, 0.707107, 0.666667, 1, 0, 0, 0.0218149, 0.999762, 1, 1, 0, 0, 0.0654031, 0.997859)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_w47n6"]
+_data = {
+"Walk": SubResource("Animation_2a26r")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ah64b"]
+size = Vector3(0.0744815, 0.158764, 0.0395432)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_eruxs"]
+radius = 0.0422707
+
+[node name="zombe2" type="CharacterBody3D" groups=["enemy"]]
+transform = Transform3D(-13.5194, 0, -1.1819e-06, 0, 13.5194, 0, 1.1819e-06, 0, -13.5194, 0, 0, 0)
+script = ExtResource("1_7mpij")
+
+[node name="BlockyZombie" type="Node3D" parent="." groups=["enemy"]]
+transform = Transform3D(3.93257e-06, 0, 0.000343985, 0, 0.000344007, 0, -0.000343985, 0, 3.93257e-06, 0, 0, 0)
+
+[node name="Torso" type="Node3D" parent="BlockyZombie"]
+transform = Transform3D(0.996195, 0, 0.0871558, 0, 1, 0, -0.0871558, 0, 0.996195, 0, 162.5, 0)
+
+[node name="Legs" type="Node3D" parent="BlockyZombie/Torso"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, -12.5, -43.75)
+
+[node name="LeftLeg" type="Node3D" parent="BlockyZombie/Torso/Legs"]
+transform = Transform3D(0.382684, 0.923879, 0, -0.923879, 0.382684, 0, 0, 0, 1, -12.5, -18.75, 43.75)
+
+[node name="LeftKnee" type="Node3D" parent="BlockyZombie/Torso/Legs/LeftLeg"]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, -2.22045e-14, -50, -31.25)
+
+[node name="LeftKnee_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Legs/LeftLeg/LeftKnee"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.22045e-14, 50, 31.25)
+mesh = SubResource("ArrayMesh_as1sn")
+skeleton = NodePath("")
+
+[node name="LowerLeg" type="Node3D" parent="BlockyZombie/Torso/Legs/LeftLeg"]
+transform = Transform3D(0.382684, -0.92388, 0, 0.92388, 0.382684, 0, 0, 0, 1, 0, -56.25, -31.25)
+
+[node name="LowerRLeg_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Legs/LeftLeg/LowerLeg"]
+mesh = SubResource("ArrayMesh_ry0up")
+skeleton = NodePath("")
+
+[node name="LeftThigh" type="MeshInstance3D" parent="BlockyZombie/Torso/Legs/LeftLeg"]
+mesh = SubResource("ArrayMesh_2eooy")
+skeleton = NodePath("")
+
+[node name="RightLeg" type="Node3D" parent="BlockyZombie/Torso/Legs"]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, -12.5, -18.75, 106.25)
+
+[node name="RightKnee" type="Node3D" parent="BlockyZombie/Torso/Legs/RightLeg"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -50, -31.25)
+
+[node name="RightKnee_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Legs/RightLeg/RightKnee"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 31.25)
+mesh = SubResource("ArrayMesh_mthig")
+skeleton = NodePath("")
+
+[node name="LowerLLeg" type="Node3D" parent="BlockyZombie/Torso/Legs/RightLeg"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -62.5, -31.25)
+
+[node name="LowerLLeg_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Legs/RightLeg/LowerLLeg"]
+mesh = SubResource("ArrayMesh_4yc2g")
+skeleton = NodePath("")
+
+[node name="RightThigh" type="MeshInstance3D" parent="BlockyZombie/Torso/Legs/RightLeg"]
+mesh = SubResource("ArrayMesh_xw62s")
+skeleton = NodePath("")
+
+[node name="Arms" type="Node3D" parent="BlockyZombie/Torso"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 6.25, 125, -43.75)
+
+[node name="LeftArm" type="Node3D" parent="BlockyZombie/Torso/Arms"]
+transform = Transform3D(-0.793354, -0.608761, 8.74228e-08, -0.608761, 0.793354, -7.45492e-17, -6.93572e-08, -5.32195e-08, -1, 0, -25, -68.75)
+
+[node name="LElbow" type="Node3D" parent="BlockyZombie/Torso/Arms/LeftArm"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.44089e-14, -50, -31.25)
+
+[node name="LElbow_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Arms/LeftArm/LElbow"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.44089e-14, 50, 31.25)
+mesh = SubResource("ArrayMesh_sungr")
+skeleton = NodePath("")
+
+[node name="LowerLArm" type="Node3D" parent="BlockyZombie/Torso/Arms/LeftArm"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -62.5, -31.25)
+
+[node name="LowerLArm_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Arms/LeftArm/LowerLArm"]
+mesh = SubResource("ArrayMesh_f12wf")
+skeleton = NodePath("")
+
+[node name="UpperLArm" type="MeshInstance3D" parent="BlockyZombie/Torso/Arms/LeftArm"]
+mesh = SubResource("ArrayMesh_4ihk6")
+skeleton = NodePath("")
+
+[node name="RightArm" type="Node3D" parent="BlockyZombie/Torso/Arms"]
+transform = Transform3D(0.92388, 0.382683, 0, -0.382683, 0.92388, 0, 0, 0, 1, 0, -25, 156.25)
+
+[node name="RElbow" type="Node3D" parent="BlockyZombie/Torso/Arms/RightArm"]
+
+[node name="RElbow_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Arms/RightArm/RElbow"]
+mesh = SubResource("ArrayMesh_6ubtm")
+skeleton = NodePath("")
+
+[node name="LowerRLeg" type="Node3D" parent="BlockyZombie/Torso/Arms/RightArm"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -62.5, -31.25)
+
+[node name="LowerRLeg_2" type="MeshInstance3D" parent="BlockyZombie/Torso/Arms/RightArm/LowerRLeg"]
+mesh = SubResource("ArrayMesh_ywuxb")
+skeleton = NodePath("")
+
+[node name="UpperRArm" type="MeshInstance3D" parent="BlockyZombie/Torso/Arms/RightArm"]
+mesh = SubResource("ArrayMesh_xtnyl")
+skeleton = NodePath("")
+
+[node name="Head" type="Node3D" parent="BlockyZombie/Torso"]
+transform = Transform3D(-0.976296, 0.21644, -4.93886e-17, 0.21644, 0.976296, -1.14485e-16, 2.34388e-17, -1.22461e-16, -1, 0, 187.5, 0)
+
+[node name="Head_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+mesh = SubResource("ArrayMesh_y4rjy")
+skeleton = NodePath("")
+
+[node name="ear" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+mesh = SubResource("ArrayMesh_6cm7s")
+skeleton = NodePath("")
+
+[node name="ear_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(-1, 0, -1.22461e-16, 0, 1, 0, 1.22461e-16, 0, -1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_nbmgj")
+skeleton = NodePath("")
+
+[node name="Tooth" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_pgueh")
+skeleton = NodePath("")
+
+[node name="Tooth_1" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_bpsi7")
+skeleton = NodePath("")
+
+[node name="Tooth_2" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_w1iem")
+skeleton = NodePath("")
+
+[node name="Tooth_3" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_u3n4x")
+skeleton = NodePath("")
+
+[node name="Tooth_4" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_rneiu")
+skeleton = NodePath("")
+
+[node name="Tooth_5" type="MeshInstance3D" parent="BlockyZombie/Torso/Head"]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_30a73")
+skeleton = NodePath("")
+
+[node name="Torso_1" type="MeshInstance3D" parent="BlockyZombie/Torso"]
+mesh = SubResource("ArrayMesh_kl2ib")
+skeleton = NodePath("")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BlockyZombie"]
+libraries = {
+"": SubResource("AnimationLibrary_w47n6")
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.999994, -9.46557e-05, 0.00245492, 9.30095e-05, 0.999997, 0.000676562, -0.00245499, -0.000676333, 0.999994, -8.92817e-05, 0.0804562, -0.000145547)
+shape = SubResource("BoxShape3D_ah64b")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_desired_distance = 0.76
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(0.867697, 0, 0.0140247, 0, 0.867811, 0, -0.0140247, 0, 0.867697, 0, 0.00802818, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(0.999999, 0, -1.86265e-09, 0, 1, 0, 1.86265e-09, 0, 0.999999, 0.000254822, 0.0471912, 0.0298291)
+shape = SubResource("SphereShape3D_eruxs")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

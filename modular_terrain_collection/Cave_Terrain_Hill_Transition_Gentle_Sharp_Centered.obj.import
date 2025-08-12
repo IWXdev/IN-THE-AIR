@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bacsylat7cwp7"
+path="res://.godot/imported/Cave_Terrain_Hill_Transition_Gentle_Sharp_Centered.obj-4e39b846c304fca23559bce31eb14ea3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cave_Terrain_Hill_Transition_Gentle_Sharp_Centered.obj-4e39b846c304fca23559bce31eb14ea3.mesh"]
+
+source_file="res://modular_terrain_collection/Cave_Terrain_Hill_Transition_Gentle_Sharp_Centered.obj"
+dest_files=["res://.godot/imported/Cave_Terrain_Hill_Transition_Gentle_Sharp_Centered.obj-4e39b846c304fca23559bce31eb14ea3.mesh", "res://.godot/imported/Cave_Terrain_Hill_Transition_Gentle_Sharp_Centered.obj-4e39b846c304fca23559bce31eb14ea3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

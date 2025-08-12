@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ct5pjwa6g7m74"
+path="res://.godot/imported/Hilly_Prop_Grass_Clump_1.obj-27ba85774a0194d99293fccf90b4be0e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Grass_Clump_1.obj-27ba85774a0194d99293fccf90b4be0e.mesh"]
+
+source_file="res://modular_terrain_collection/Hilly_Prop_Grass_Clump_1.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Grass_Clump_1.obj-27ba85774a0194d99293fccf90b4be0e.mesh", "res://.godot/imported/Hilly_Prop_Grass_Clump_1.obj-27ba85774a0194d99293fccf90b4be0e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

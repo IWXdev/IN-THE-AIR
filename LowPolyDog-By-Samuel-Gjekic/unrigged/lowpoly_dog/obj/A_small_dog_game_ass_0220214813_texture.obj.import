@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vmemabsjsg85"
+path="res://.godot/imported/A_small_dog_game_ass_0220214813_texture.obj-44f9c6904193628afc5fbb04b816b55f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/A_small_dog_game_ass_0220214813_texture.obj-44f9c6904193628afc5fbb04b816b55f.mesh"]
+
+source_file="res://LowPolyDog-By-Samuel-Gjekic/unrigged/lowpoly_dog/obj/A_small_dog_game_ass_0220214813_texture.obj"
+dest_files=["res://.godot/imported/A_small_dog_game_ass_0220214813_texture.obj-44f9c6904193628afc5fbb04b816b55f.mesh", "res://.godot/imported/A_small_dog_game_ass_0220214813_texture.obj-44f9c6904193628afc5fbb04b816b55f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

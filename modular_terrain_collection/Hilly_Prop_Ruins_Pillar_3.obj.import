@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5uq2j6nop2dl"
+path="res://.godot/imported/Hilly_Prop_Ruins_Pillar_3.obj-17c6bd8499ac293d55a6ce26711b4047.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Prop_Ruins_Pillar_3.obj-17c6bd8499ac293d55a6ce26711b4047.mesh"]
+
+source_file="res://modular_terrain_collection/Hilly_Prop_Ruins_Pillar_3.obj"
+dest_files=["res://.godot/imported/Hilly_Prop_Ruins_Pillar_3.obj-17c6bd8499ac293d55a6ce26711b4047.mesh", "res://.godot/imported/Hilly_Prop_Ruins_Pillar_3.obj-17c6bd8499ac293d55a6ce26711b4047.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

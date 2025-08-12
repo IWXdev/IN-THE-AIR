@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwd8bg7y8owdq"
+path="res://.godot/imported/Hilly_Terrain_Hill_Corner_Inner_3x3.obj-e8733c7ad79b01cc2488fd17e1cb4173.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Terrain_Hill_Corner_Inner_3x3.obj-e8733c7ad79b01cc2488fd17e1cb4173.mesh"]
+
+source_file="res://modular_terrain_collection/Hilly_Terrain_Hill_Corner_Inner_3x3.obj"
+dest_files=["res://.godot/imported/Hilly_Terrain_Hill_Corner_Inner_3x3.obj-e8733c7ad79b01cc2488fd17e1cb4173.mesh", "res://.godot/imported/Hilly_Terrain_Hill_Corner_Inner_3x3.obj-e8733c7ad79b01cc2488fd17e1cb4173.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

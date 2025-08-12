@@ -1,0 +1,161 @@
+[gd_scene load_steps=11 format=3 uid="uid://d1n8wlkqj78lo"]
+
+[ext_resource type="Script" path="res://scenes/loading_screen.gd" id="1_sbl4p"]
+[ext_resource type="Texture2D" uid="uid://dc1xgoekuciar" path="res://wallpapersden.com_planet-in-space-4k_4200x2280.jpg" id="2_dkjne"]
+[ext_resource type="Texture2D" uid="uid://c8vsjvoos4ieq" path="res://all_png_ac_asset_pack/all_png_ac_asset_pack/Asset 8.png" id="2_fgbeg"]
+[ext_resource type="Texture2D" uid="uid://bpi0spumgqgfj" path="res://all_png_ac_asset_pack/all_png_ac_asset_pack/Asset 6.png" id="3_nj3jb"]
+
+[sub_resource type="Animation" id="Animation_7disj"]
+length = 0.001
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(91.3519, 83.1771)]
+}
+
+[sub_resource type="Animation" id="Animation_oavkx"]
+resource_name = "new_animation"
+length = 25.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10, 15, 20, 25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(91.3519, 83.1771), Vector2(82.2327, 97.6102), Vector2(102.23, 71.4371), Vector2(101.45, 96.6865), Vector2(82.3302, 70.2055), Vector2(91.3519, 83.1771)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5twvt"]
+_data = {
+"RESET": SubResource("Animation_7disj"),
+"new_animation": SubResource("Animation_oavkx")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_ugabq"]
+font_color = Color(0.80479, 0, 0.128775, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 6
+shadow_color = Color(0.208901, 0.297761, 9.62615e-08, 0.286275)
+shadow_offset = Vector2(1.5, 1.5)
+
+[sub_resource type="FontVariation" id="FontVariation_cwfxt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3p6t3"]
+font = SubResource("FontVariation_cwfxt")
+font_color = Color(0.0229735, 0.360935, 0.596763, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 6
+shadow_color = Color(0.999918, 0.83229, 0.912462, 1)
+shadow_offset = Vector2(1.5, 1.5)
+
+[node name="loading screen" type="Node2D"]
+script = ExtResource("1_sbl4p")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 13.0
+offset_top = -5.0
+offset_right = 197.0
+offset_bottom = 161.0
+scale = Vector2(10.2514, 6.49522)
+color = Color(0.99558, 0.99558, 0.99558, 1)
+
+[node name="GettyImages-497707356-e722Dce" type="Sprite2D" parent="ColorRect"]
+texture_filter = 1
+position = Vector2(91.3519, 83.1771)
+scale = Vector2(0.0605011, 0.103361)
+texture = ExtResource("2_dkjne")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect/GettyImages-497707356-e722Dce"]
+libraries = {
+"": SubResource("AnimationLibrary_5twvt")
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 736.0
+offset_top = 400.0
+offset_right = 2268.0
+offset_bottom = 700.0
+scale = Vector2(0.24128, 0.407148)
+texture_normal = ExtResource("2_fgbeg")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 736.0
+offset_top = 592.0
+offset_right = 2268.0
+offset_bottom = 892.0
+scale = Vector2(0.24128, 0.407148)
+texture_normal = ExtResource("2_fgbeg")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+offset_left = 568.0
+offset_top = 104.0
+offset_right = 2100.0
+offset_bottom = 404.0
+scale = Vector2(0.467311, 0.471411)
+texture_normal = ExtResource("3_nj3jb")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 765.0
+offset_top = 415.0
+offset_right = 818.0
+offset_bottom = 438.0
+scale = Vector2(5.78102, 4.19203)
+text = "N E X T"
+label_settings = SubResource("LabelSettings_ugabq")
+horizontal_alignment = 1
+metadata/transform = Transform2D(0, 0, 0, 0, 0, 0)
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+offset_left = 770.0
+offset_top = 606.0
+offset_right = 821.0
+offset_bottom = 629.0
+scale = Vector2(6.13067, 4.31011)
+text = "Q U I T"
+label_settings = SubResource("LabelSettings_ugabq")
+horizontal_alignment = 1
+metadata/transform = Transform2D(0, 0, 0, 0, 0, 0)
+
+[node name="Label3" type="Label" parent="."]
+texture_filter = 1
+offset_left = 588.0
+offset_top = 109.0
+offset_right = 699.0
+offset_bottom = 132.0
+scale = Vector2(6.04088, 5.39505)
+text = "I N  T H E  A I R"
+label_settings = SubResource("LabelSettings_ugabq")
+horizontal_alignment = 1
+metadata/transform = Transform2D(0, 0, 0, 0, 0, 0)
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 998.0
+offset_right = 181.0
+offset_bottom = 1021.0
+scale = Vector2(1.97024, 1.61976)
+text = "prod by  :  i w x _ 1 0
+"
+label_settings = SubResource("LabelSettings_3p6t3")
+horizontal_alignment = 1
+metadata/transform = Transform2D(0, 0, 0, 0, 0, 0)
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]

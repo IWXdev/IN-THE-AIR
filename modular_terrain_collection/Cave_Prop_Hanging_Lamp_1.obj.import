@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://mv666mgbn7ae"
+path="res://.godot/imported/Cave_Prop_Hanging_Lamp_1.obj-59ae6cf5eb1fbbb4280a888368fea873.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cave_Prop_Hanging_Lamp_1.obj-59ae6cf5eb1fbbb4280a888368fea873.mesh"]
+
+source_file="res://modular_terrain_collection/Cave_Prop_Hanging_Lamp_1.obj"
+dest_files=["res://.godot/imported/Cave_Prop_Hanging_Lamp_1.obj-59ae6cf5eb1fbbb4280a888368fea873.mesh", "res://.godot/imported/Cave_Prop_Hanging_Lamp_1.obj-59ae6cf5eb1fbbb4280a888368fea873.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

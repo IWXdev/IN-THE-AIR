@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ct3cw0gn358cv"
+path="res://.godot/imported/Hilly_Terrain_Path_Corner_Outer_3x3.obj-be15b635c33c66043a7dd214a787f7ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Hilly_Terrain_Path_Corner_Outer_3x3.obj-be15b635c33c66043a7dd214a787f7ec.mesh"]
+
+source_file="res://modular_terrain_collection/Hilly_Terrain_Path_Corner_Outer_3x3.obj"
+dest_files=["res://.godot/imported/Hilly_Terrain_Path_Corner_Outer_3x3.obj-be15b635c33c66043a7dd214a787f7ec.mesh", "res://.godot/imported/Hilly_Terrain_Path_Corner_Outer_3x3.obj-be15b635c33c66043a7dd214a787f7ec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

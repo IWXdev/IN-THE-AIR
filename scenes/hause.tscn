@@ -1,0 +1,131 @@
+[gd_scene load_steps=16 format=3 uid="uid://pk81t08rxe0n"]
+
+[ext_resource type="Texture2D" uid="uid://c5vnxvnkc8jro" path="res://textures/wood_floor_deck_1k.blend/textures/wood_floor_deck_diff_1k.jpg" id="1_dodv8"]
+[ext_resource type="Texture2D" uid="uid://uqsdg6wvmtm5" path="res://textures/41719572-wooden-texture-de-trace-avec-fenêtre-vecteur-de-fond-paroi-en-bois-maison-écologique.jpg" id="1_gxmmp"]
+[ext_resource type="Script" path="res://scenes/hause.gd" id="1_hbn0l"]
+[ext_resource type="ArrayMesh" uid="uid://mv666mgbn7ae" path="res://modular_terrain_collection/Cave_Prop_Hanging_Lamp_1.obj" id="2_or365"]
+[ext_resource type="ArrayMesh" uid="uid://dtpxld7qw6cc4" path="res://textures/Door3.obj" id="3_swe23"]
+[ext_resource type="PackedScene" uid="uid://tdwier85pveg" path="res://assets/Player/player.tscn" id="5_mgq1m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s5qlv"]
+albedo_texture = ExtResource("1_dodv8")
+uv1_scale = Vector3(10, 10, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bq0qq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h7jcl"]
+material = SubResource("StandardMaterial3D_bq0qq")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7vgpi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gaoq4"]
+albedo_color = Color(1, 0.424604, 0.0593379, 1)
+albedo_texture = ExtResource("1_dodv8")
+uv1_scale = Vector3(5, 2, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tla0e"]
+albedo_color = Color(0.167672, 0.0787308, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wka06"]
+albedo_color = Color(0.506528, 0.371785, 0.292008, 1)
+albedo_texture = ExtResource("1_gxmmp")
+uv1_scale = Vector3(1.38, 2.02, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwipt"]
+albedo_color = Color(0.647059, 0.282353, 0, 1)
+albedo_texture = ExtResource("1_dodv8")
+uv1_scale = Vector3(5, 5, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dvwv7"]
+albedo_color = Color(0.645556, 0.282097, 0, 1)
+albedo_texture = ExtResource("1_dodv8")
+uv1_scale = Vector3(5, 5, 1)
+
+[node name="hause" type="Node3D"]
+transform = Transform3D(-9.05486e-08, 0, 1.87045, 0, 1.52483, 0, -2.07151, 0, -8.176e-08, 0, 0, 0)
+script = ExtResource("1_hbn0l")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.999622, -0.0274854, 0, 0.0274854, -0.999622, 0.0253763, 2.20589, 0)
+omni_range = 18.6545
+
+[node name="s9af" type="StaticBody3D" parent="."]
+transform = Transform3D(4.32204, 0, 0, 0, 0.0158471, 0, 0, 0, 4.77268, 0, 2.78407, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="s9af"]
+material_override = SubResource("StandardMaterial3D_s5qlv")
+mesh = SubResource("BoxMesh_h7jcl")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="s9af"]
+shape = SubResource("BoxShape3D_7vgpi")
+
+[node name="CavePropHangingLamp1" type="MeshInstance3D" parent="s9af"]
+transform = Transform3D(0.231372, 0, 0, 0, 63.1031, 0, 0, 0, 0.209526, 0.007777, -11.4733, -0.105297)
+mesh = ExtResource("2_or365")
+skeleton = NodePath("../..")
+
+[node name="floor" type="StaticBody3D" parent="."]
+transform = Transform3D(4.32204, 0, 0, 0, 0.0158471, 0, 0, 0, 4.77268, 0, -0.00769912, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="floor"]
+material_override = SubResource("StandardMaterial3D_s5qlv")
+mesh = SubResource("BoxMesh_h7jcl")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor"]
+shape = SubResource("BoxShape3D_7vgpi")
+
+[node name="jidar" type="StaticBody3D" parent="."]
+transform = Transform3D(0.00949521, -0.0158258, 0, 2.77573, 5.41367e-05, 0, 0, 0, 4.44319, -2.1583, 1.39098, -0.18872)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="jidar"]
+transform = Transform3D(-4.7855e-08, 0.933361, 0.202788, 1.77636e-15, 0.19329, -0.979223, -1.09479, -4.07985e-08, -8.86413e-09, -0.0694223, -0.0416565, 0.0500696)
+material_override = SubResource("StandardMaterial3D_gaoq4")
+mesh = SubResource("BoxMesh_h7jcl")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="jidar"]
+shape = SubResource("BoxShape3D_7vgpi")
+
+[node name="Door3" type="MeshInstance3D" parent="jidar"]
+transform = Transform3D(0.00153853, 0.437488, 0, -78.8844, 0.262485, 0, 0, 0, 0.319869, -0.504999, -1.27719, 0.0254438)
+material_override = SubResource("StandardMaterial3D_tla0e")
+mesh = ExtResource("3_swe23")
+
+[node name="jidar2" type="StaticBody3D" parent="."]
+transform = Transform3D(0.00949521, -0.0158258, 0, 2.77573, 5.41367e-05, 0, 0, 0, 4.77268, 2.158, 1.39098, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="jidar2"]
+material_override = SubResource("StandardMaterial3D_wka06")
+mesh = SubResource("BoxMesh_h7jcl")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="jidar2"]
+shape = SubResource("BoxShape3D_7vgpi")
+
+[node name="jidar3" type="StaticBody3D" parent="."]
+transform = Transform3D(0.000112523, -0.000187739, 4.35933, 2.77572, 5.41932e-05, 0, -0.00949451, 0.0158411, 0.051664, -0.0391212, 1.39098, -2.27672)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="jidar3"]
+material_override = SubResource("StandardMaterial3D_qwipt")
+mesh = SubResource("BoxMesh_h7jcl")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="jidar3"]
+shape = SubResource("BoxShape3D_7vgpi")
+
+[node name="jidar4" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.23564e-10, 6.99378e-10, 4.35, 2.77598, 5.58502e-05, 8.27122e-16, -0.00969, 0.0159999, -1.90145e-07, 0.0228093, 1.39098, 2.37093)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="jidar4"]
+material_override = SubResource("StandardMaterial3D_dvwv7")
+mesh = SubResource("BoxMesh_h7jcl")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="jidar4"]
+shape = SubResource("BoxShape3D_7vgpi")
+
+[node name="player" parent="." instance=ExtResource("5_mgq1m")]
+unique_name_in_owner = true
+transform = Transform3D(-3.04996e-08, 0, -0.697749, 0, 0.697749, 0, 0.697749, 0, -3.04996e-08, -1.68877, 0.681927, -0.140164)

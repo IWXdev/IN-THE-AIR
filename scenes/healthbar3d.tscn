@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://mfrnbaojp580"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5epwy"]
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irq8d"]
+bg_color = Color(0.858637, 0, 0.165088, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[node name="haethbar3d" type="ProgressBar"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -155.0
+offset_top = -23.0
+offset_right = 155.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_5epwy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_irq8d")
+max_value = 5.0
+value = 5.0
+show_percentage = false

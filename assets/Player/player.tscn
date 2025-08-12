@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=3 uid="uid://tdwier85pveg"]
+
+[ext_resource type="Script" path="res://assets/Player/player.gd" id="1_hr3my"]
+[ext_resource type="PackedScene" uid="uid://cv1twex4gr5a2" path="res://assets/Player/gun.tscn" id="2_ill0o"]
+[ext_resource type="Texture2D" uid="uid://dmmoki3tiy375" path="res://assets/Sprites/crosshair.png" id="3_excxg"]
+[ext_resource type="Texture2D" uid="uid://c1kkijjb0ry1n" path="res://asset/2D Health & Ammo Pickups v6.2/2D Health & Ammo Pickups v6.2/32px/health-red 32px.png" id="4_wkb23"]
+[ext_resource type="Texture2D" uid="uid://uluj52rnio8r" path="res://asset/2D Health & Ammo Pickups v6.2/2D Health & Ammo Pickups v6.2/32px/ammo-rifle-alt 32px.png" id="5_5bckn"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mm37t"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gmx83"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nw7nb"]
+font_size = 117
+font_color = Color(0, 0.482353, 1, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ph2gc"]
+font_size = 117
+font_color = Color(0.691352, 0, 0.0554729, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="player" type="CharacterBody3D" groups=["player"]]
+script = ExtResource("1_hr3my")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_mm37t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_gmx83")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.679, 0)
+
+[node name="Camera3D" type="Camera3D" parent="head"]
+
+[node name="gun" parent="head/Camera3D" instance=ExtResource("2_ill0o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.439, -0.351819, -0.747602)
+
+[node name="Label" type="Label" parent="head/Camera3D"]
+offset_left = 126.0
+offset_top = -5.0
+offset_right = 500.0
+offset_bottom = 156.0
+scale = Vector2(0.752388, 0.829915)
+text = "40 / 40"
+label_settings = SubResource("LabelSettings_nw7nb")
+
+[node name="Label2" type="Label" parent="head/Camera3D"]
+offset_left = 130.0
+offset_top = 108.0
+offset_right = 504.0
+offset_bottom = 269.0
+scale = Vector2(0.780329, 0.761947)
+text = "5 / 5"
+label_settings = SubResource("LabelSettings_ph2gc")
+
+[node name="TextureRect" type="TextureRect" parent="head/Camera3D"]
+texture_filter = 1
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 1024.0
+offset_bottom = 604.0
+texture = ExtResource("3_excxg")
+
+[node name="Ammo-rifle-alt32Px" type="Sprite2D" parent="head/Camera3D"]
+texture_filter = 1
+position = Vector2(57, 61)
+scale = Vector2(3.85516, 3.54245)
+texture = ExtResource("5_5bckn")
+
+[node name="Health-red32Px" type="Sprite2D" parent="head/Camera3D"]
+texture_filter = 1
+position = Vector2(55, 171)
+scale = Vector2(3.73572, 3.70919)
+texture = ExtResource("4_wkb23")

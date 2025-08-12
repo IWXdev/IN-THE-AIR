@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b4od66w7svumk"
+path="res://.godot/imported/Cave_Terrain_Floor_Normal.obj-896a52c3afbd402b02ebe6d9eceb9580.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cave_Terrain_Floor_Normal.obj-896a52c3afbd402b02ebe6d9eceb9580.mesh"]
+
+source_file="res://modular_terrain_collection/Cave_Terrain_Floor_Normal.obj"
+dest_files=["res://.godot/imported/Cave_Terrain_Floor_Normal.obj-896a52c3afbd402b02ebe6d9eceb9580.mesh", "res://.godot/imported/Cave_Terrain_Floor_Normal.obj-896a52c3afbd402b02ebe6d9eceb9580.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

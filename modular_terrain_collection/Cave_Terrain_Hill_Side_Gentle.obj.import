@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4x7toeavop4r"
+path="res://.godot/imported/Cave_Terrain_Hill_Side_Gentle.obj-2fb3ff074d566a15906b1f6f0edd6717.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Cave_Terrain_Hill_Side_Gentle.obj-2fb3ff074d566a15906b1f6f0edd6717.mesh"]
+
+source_file="res://modular_terrain_collection/Cave_Terrain_Hill_Side_Gentle.obj"
+dest_files=["res://.godot/imported/Cave_Terrain_Hill_Side_Gentle.obj-2fb3ff074d566a15906b1f6f0edd6717.mesh", "res://.godot/imported/Cave_Terrain_Hill_Side_Gentle.obj-2fb3ff074d566a15906b1f6f0edd6717.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
